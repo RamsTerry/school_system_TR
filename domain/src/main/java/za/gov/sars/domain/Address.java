@@ -13,27 +13,26 @@ import javax.persistence.Table;
 import org.hibernate.envers.Audited;
 import za.gov.sars.common.AddressType;
 
-
 /**
  *
  * @author S2028398
  */
 @Entity
 @Audited
-@Table(name="address")
-public class Address extends BaseEntity{
-    
+@Table(name = "address")
+public class Address extends BaseEntity {
+
     //addressType
-  @Column(name = "address_line_1")
-  private String addressLine1; 
-  @Column(name = "address_line_2")
-  private String addressLine2;
-  @Column(name = "street")
-  private String street;
-  @Column(name = "area")
-  private String area;
-  @Column(name = "code")
-  private String code; 
+    @Column(name = "address_line_1")
+    private String addressLine1;
+    @Column(name = "address_line_2")
+    private String addressLine2;
+    @Column(name = "street")
+    private String street;
+    @Column(name = "area")
+    private String area;
+    @Column(name = "code")
+    private String code;
     @Enumerated(EnumType.STRING)
     @Column(name = "address_type")
     private AddressType addressType;
@@ -86,7 +85,4 @@ public class Address extends BaseEntity{
         this.addressType = addressType;
     }
 
-
-  
-  
 }

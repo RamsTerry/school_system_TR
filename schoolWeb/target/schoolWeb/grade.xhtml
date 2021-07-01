@@ -33,9 +33,9 @@
                         <h:outputText value="#{gr.designation}"/>
                     </p:column>
                     <p:column headerText="Action">
-                        <b:commandButton icon-size="lg" icon-awesome="pencil" action="#{subjectBean.addOrUpdate(gr)}" update="@form"/>
+                        <b:commandButton icon-size="lg" icon-awesome="pencil" action="#{gradeBean.addOrUpdate(gr)}" update="@form"/>
                         <p:spacer width="5px"/>
-                        <b:commandButton rendered="#{activeUser.admin or activeUser.principal}" icon-size="lg" icon-awesome="remove" action="#{subjectBean.delete(gr)}" update="@form"/>
+                        <b:commandButton rendered="#{activeUser.admin or activeUser.principal}" icon-size="lg" icon-awesome="remove" action="#{gradeBean.delete(gr)}" update="@form"/>
                     </p:column>
                 </p:dataTable>
             </ui:define>
