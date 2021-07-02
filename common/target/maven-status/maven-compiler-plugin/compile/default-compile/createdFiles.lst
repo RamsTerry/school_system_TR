@@ -3,5 +3,6 @@ za\gov\sars\common\DatasourceUtility.class
 za\gov\sars\common\AddressType.class
 za\gov\sars\common\PersonType.class
 za\gov\sars\common\TestDataSourceConfiguration.class
+za\gov\sars\common\SchoolType.class
 za\gov\sars\common\DataSourceConfiguration.class
 za\gov\sars\common\SystemUserStatus.class

@@ -12,3 +12,4 @@ za\gov\sars\mb\BaseBean.class
 za\gov\sars\mb\StudentBean.class
 za\gov\sars\config\EntityConverter.class
 za\gov\sars\config\WebInitializer.class
+za\gov\sars\mb\StdProfileBean.class

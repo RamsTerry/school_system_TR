@@ -13,7 +13,7 @@
     <h:body>
         <ui:composition template="/template/template.xhtml">
             <ui:define name="maincontent">
-                <b:panel rendered="#{stdProfileBean.student eq 'LEARNER'}" look="primary" title="Profile" collapsible="false">
+                <b:panel rendered="#{stdProfileBean.student eq 'LEARNER'}" look="primary" title="Student Profile" collapsible="false">
                     <b:inputText value="#{stdProfileBean.student.firstName}" label="First Name" field-size="md"/>
                     <b:inputText value="#{stdProfileBean.student.lastName}" label="Last Name" field-size="md"/>
                     <b:inputText value="#{stdProfileBean}" label="Identity Number" field-size="md"/>
