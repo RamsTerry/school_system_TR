@@ -44,9 +44,11 @@ public class StdProfileBean extends BaseBean {
     }
 
     public void cancel(Student std) {
+        if(std.getId()==null){
         if (std.getPersonType().equals(PersonType.LEARNER)) {
             redirect("studentDash");
         }
+        }   
         redirect("learnerConsole");
     }
 

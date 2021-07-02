@@ -187,11 +187,12 @@ public class EmployeeBean extends BaseBean {
     }
 
     public void cancel(Employee emp) {
-
+        if(emp.getId()==null){
         if (employees.contains(emp)) {
 
             employees.remove(emp);
 
+        }
         }
 
         this.resetView(false).setList(true);

@@ -108,11 +108,12 @@ public class SubjectBean extends BaseBean{
     }
 
     public void cancel(Subject sub) {
+        if(sub.getId()==null){
 
         if (subjects.contains(sub)) {
 
             subjects.remove(sub);
-
+        }
         }
 
         this.resetView(false).setList(true);

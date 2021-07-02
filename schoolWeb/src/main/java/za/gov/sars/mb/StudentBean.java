@@ -116,8 +116,10 @@ public class StudentBean extends BaseBean {
     }
 
     public void cancel(Student st) {
+        if(st.getId()==null){
         if (students.contains(st)) {
             students.remove(st);
+        }
         }
         this.resetView(false).setList(true);
     }
