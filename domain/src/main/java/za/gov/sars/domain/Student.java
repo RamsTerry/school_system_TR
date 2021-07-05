@@ -19,6 +19,7 @@ import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import org.hibernate.envers.Audited;
 
+
 /**
  *
  * @author S2028398
@@ -35,6 +36,7 @@ public class Student extends Person{
     @ManyToMany(cascade = CascadeType.MERGE,fetch = FetchType.EAGER)
     @JoinTable(name="student_subject",joinColumns = {@JoinColumn(name = "student_id")}, inverseJoinColumns = {@JoinColumn(name = "subject_id")})
     private List<Subject>subjects = new ArrayList<>();
+
 
     public List<Subject> getSubjects() {
         return subjects;

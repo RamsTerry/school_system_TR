@@ -92,8 +92,10 @@ public class StudentBean extends BaseBean {
     }
 
     public void save(Student st) {
+        student.setCreatedBy("Test");
         if (st.getId() != null) {
             studentService.update(st);
+            
         } else {
             studentService.save(st);
         }
